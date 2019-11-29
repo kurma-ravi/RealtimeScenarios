@@ -1,6 +1,6 @@
 # AWS RealTime Scenarios
 
-## How to Login to Linux EC2 instance Using customized user ?
+## 1. How to Login to Linux EC2 instance Using customized user ?
 
      1. Login to EC2 instance using "ec2-user" via Mobaxterm:
 		sudo su -
