@@ -1,27 +1,23 @@
 # DevOps RealTime Scenarios
 
-## How to copy files on to a Docker Container ?
-	The file copied has to be on the Docker Server. To copy this file on to the running container.Run the below command:
-	
+## 1. How to copy files on to a Docker Container ?
+      1. The file copied has to be on the Docker Server. To copy this file on to the running container.Run the below command:
 		>docker cp <filename> <containerID>:/tmp/
-		
-    Now, to check the file is copied on the container or not, run below commands:
-	
+      2. Now, to check the file is copied on the container or not, run below commands:
 		>docker exec -it <containerID> bash
 		>cd /tmp
-		
-	NOTE: You can also copy the files to docker container using DockerFile.
+      NOTE: You can also copy the files to docker container using DockerFile.
 
-## How to login to docker container and run commands ?
-	 >docker pull tomcat:latest`
-	
-	/* The below command will run tomcat container in detached moded. Best practice instead of "-it" mode*/
+## 2. How to login to docker container and run commands ?
+      1. Pull the image 	 
+	 	>docker pull tomcat:latest`
+      2. The below command will run tomcat container in detached moded. Best practice instead of "-it" mode*/
 		>docker run -d --name webserver tomcat
-		
-	/*Connecting to running container & run your commands */
+      3. Connecting to running container & run your commands */
 		>docker exec -it <containerID> /bin/bash
 	
-##  S3 as a artifact for Jenkins
+
+## 3. How to store artifacts in S3 using Jenkins
 
 ### Prerequisites
 1. Create Jenkins Server
