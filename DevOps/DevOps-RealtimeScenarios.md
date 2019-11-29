@@ -27,7 +27,7 @@
 1. Create a S3 bucket to store artifacts  
     `S3 --> Create bucket `
       ```sh 
-   Bucket name: valaxy-s3-artifact 
+   Bucket name: ravi-s3-artifact 
    Region: Singapore
    ```
 1. Create new IAM role with "S3 full access" and assign it to jenkins server  
